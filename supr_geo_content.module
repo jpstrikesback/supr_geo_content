@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Supr Geo Content feature.
+ */
+
+include_once 'supr_geo_content.features.inc';
