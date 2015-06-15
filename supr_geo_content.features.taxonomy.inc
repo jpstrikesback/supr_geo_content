@@ -9,9 +9,9 @@
  */
 function supr_geo_content_taxonomy_default_vocabularies() {
   return array(
-    'listing_category' => array(
-      'name' => 'Listing Category',
-      'machine_name' => 'listing_category',
+    'categories' => array(
+      'name' => 'Categories',
+      'machine_name' => 'categories',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',

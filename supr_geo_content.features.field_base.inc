@@ -31,6 +31,21 @@ function supr_geo_content_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
+  // Exported field_base: 'field_address'
+  $field_bases['field_address'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_address',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'addressfield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'addressfield',
+  );
+
   // Exported field_base: 'field_admincode1'
   $field_bases['field_admincode1'] = array(
     'active' => 1,
@@ -50,6 +65,21 @@ function supr_geo_content_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_email'
+  $field_bases['field_email'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_email',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'email',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'email',
   );
 
   // Exported field_base: 'field_fax'
@@ -140,6 +170,31 @@ function supr_geo_content_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_image'
+  $field_bases['field_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_image',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
   // Exported field_base: 'field_lat_lon'
   $field_bases['field_lat_lon'] = array(
     'active' => 1,
@@ -190,36 +245,6 @@ function supr_geo_content_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_address'
-  $field_bases['field_address'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_address',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'addressfield',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'addressfield',
-  );
-
-  // Exported field_base: 'field_email'
-  $field_bases['field_email'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_email',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'email',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'email',
-  );
-
   // Exported field_base: 'field_listing_type'
   $field_bases['field_listing_type'] = array(
     'active' => 1,
@@ -246,7 +271,7 @@ function supr_geo_content_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'listing_category' => 'listing_category',
+          'categories' => 'categories',
         ),
       ),
       'target_type' => 'taxonomy_term',
@@ -279,31 +304,6 @@ function supr_geo_content_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_image'
-  $field_bases['field_image'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_image',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
   );
 
   // Exported field_base: 'field_phone'
